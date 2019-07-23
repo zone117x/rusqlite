@@ -72,7 +72,7 @@ mod build_bundled {
             .flag("-DSQLITE_ENABLE_STAT4")
             .flag("-DSQLITE_HAVE_ISNAN")
             .flag("-DSQLITE_SOUNDEX")
-            .flag("-DSQLITE_THREADSAFE=1")
+            .flag("-DSQLITE_THREADSAFE=0")
             .flag("-DSQLITE_USE_URI")
             .flag("-DHAVE_USLEEP=1");
         if cfg!(feature = "unlock_notify") {
